@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ============================================================= -->
+<!-- Application: Tabbed Timers -->
+<!-- Activity:    Tab2Fragment -->
+<!-- ============================================================= -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7868e6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- Title row -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Countdown (seconds)"
+            android:textSize="38sp"
+            android:textColor="#fff"
+            android:layout_marginBottom="10dp" />
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- Start countdown input row -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Start:"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="36sp"
+                android:textColor="#fff"/>
+
+            <EditText
+                android:id="@+id/editTextStartCount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#e4fbff"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:inputType="number"
+                android:padding="6dp"/>
+
+        </LinearLayout>
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- Current countdown display row -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Current:"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="#fff"/>
+
+            <EditText
+                android:id="@+id/editTextCountdown"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#e4fbff"
+                android:textAllCaps="false"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:padding="8dp"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- Start button row -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <Button
+            android:id="@+id/buttonStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e4fbff"
+            android:text="Start"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp" />
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- Stop button row -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <Button
+            android:id="@+id/buttonStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e4fbff"
+            android:text="Stop"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"/>
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- Reset button row -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e4fbff"
+            android:text="Reset"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"/>
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- Finished label row -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <TextView
+            android:id="@+id/labelFinished"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Finished!"
+            android:textSize="38sp"
+            android:textColor="#0f0"
+            android:visibility="invisible"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>
